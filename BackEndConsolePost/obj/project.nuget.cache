@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "9VUK6WSf9Hk9iascvnpJNnbWn8J/ERmhiJ/rxAzD3D53p9rpxpdCIfU1UQ3qgOVCN15HwO9XtyhNVzPQzWbPPA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\kaviya\\source\\repos\\BackEndConsole\\BackEndConsolePost\\BackEndConsolePost.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\kaviya\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

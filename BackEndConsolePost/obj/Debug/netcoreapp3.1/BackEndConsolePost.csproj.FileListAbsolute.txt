@@ -1,0 +1,15 @@
+C:\Users\kaviya\source\repos\BackEndConsole\BackEndConsolePost\bin\Debug\netcoreapp3.1\BackEndConsolePost.exe
+C:\Users\kaviya\source\repos\BackEndConsole\BackEndConsolePost\obj\Debug\netcoreapp3.1\BackEndConsolePost.csprojAssemblyReference.cache
+C:\Users\kaviya\source\repos\BackEndConsole\BackEndConsolePost\obj\Debug\netcoreapp3.1\BackEndConsolePost.AssemblyInfoInputs.cache
+C:\Users\kaviya\source\repos\BackEndConsole\BackEndConsolePost\obj\Debug\netcoreapp3.1\BackEndConsolePost.AssemblyInfo.cs
+C:\Users\kaviya\source\repos\BackEndConsole\BackEndConsolePost\bin\Debug\netcoreapp3.1\BackEndConsolePost.deps.json
+C:\Users\kaviya\source\repos\BackEndConsole\BackEndConsolePost\bin\Debug\netcoreapp3.1\BackEndConsolePost.runtimeconfig.json
+C:\Users\kaviya\source\repos\BackEndConsole\BackEndConsolePost\bin\Debug\netcoreapp3.1\BackEndConsolePost.runtimeconfig.dev.json
+C:\Users\kaviya\source\repos\BackEndConsole\BackEndConsolePost\bin\Debug\netcoreapp3.1\BackEndConsolePost.dll
+C:\Users\kaviya\source\repos\BackEndConsole\BackEndConsolePost\bin\Debug\netcoreapp3.1\BackEndConsolePost.pdb
+C:\Users\kaviya\source\repos\BackEndConsole\BackEndConsolePost\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\kaviya\source\repos\BackEndConsole\BackEndConsolePost\obj\Debug\netcoreapp3.1\BackEndConsolePost.csproj.CoreCompileInputs.cache
+C:\Users\kaviya\source\repos\BackEndConsole\BackEndConsolePost\obj\Debug\netcoreapp3.1\BackEndConsolePost.csproj.CopyComplete
+C:\Users\kaviya\source\repos\BackEndConsole\BackEndConsolePost\obj\Debug\netcoreapp3.1\BackEndConsolePost.dll
+C:\Users\kaviya\source\repos\BackEndConsole\BackEndConsolePost\obj\Debug\netcoreapp3.1\BackEndConsolePost.pdb
+C:\Users\kaviya\source\repos\BackEndConsole\BackEndConsolePost\obj\Debug\netcoreapp3.1\BackEndConsolePost.genruntimeconfig.cache
