@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "DBbkY3KQYg6MoiSC/0o8jsDqkSlubb6AN/84AAWdVj+zH7sjEIAECee2DeHurWApuw4K9bgWoy1EMtQLcUhXZw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\kaviya\\source\\repos\\BackEndConsole\\BackendBlazor\\BackendBlazor.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\kaviya\\.nuget\\packages\\microsoft.aspnetcore.blazor.httpclient\\3.2.0-preview3.20168.3\\microsoft.aspnetcore.blazor.httpclient.3.2.0-preview3.20168.3.nupkg.sha512",
+    "C:\\Users\\kaviya\\.nuget\\packages\\system.text.json\\4.7.1\\system.text.json.4.7.1.nupkg.sha512"
+  ],
+  "logs": []
+}

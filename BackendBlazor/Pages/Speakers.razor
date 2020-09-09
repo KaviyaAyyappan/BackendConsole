@@ -1,0 +1,108 @@
+﻿@page "/speakers"
+@using BackendBlazor.Models
+@inject HttpClient http
+
+
+
+    <div class="container">
+
+        <div class="text-right">
+            <button type="submit" class="btn btn-danger" @onclick="DeleteAllSpeaker">Delete all Customers!</button>
+        </div>
+
+        <EditForm class="my-5" Model="@speaker" OnSubmit="@CreateSpeakers">
+            <h5 class="mb-3">create a Speaker</h5>
+            <div class="form-group">
+                <div class="row">
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Name" @bind="speaker.name" />
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Bio" @bind="speaker.Bio" />
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Website" @bind="speaker.webSite" />
+                    </div>
+                </div>
+            </div>
+            
+            <button type="submit" class="btn btn-success">Create Speaker</button>
+        </EditForm>
+
+
+
+        <table class="table">
+            <thead class="thead-light">
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Bio</th>
+                    <th scope="col" colspan="2">Website</th>
+                </tr>
+            </thead>
+            @if (speakers != null)
+            {
+                <tbody>
+                    @foreach (var speaker in speakers)
+                    {
+                        <tr>
+                            <th scope="row">@speaker.Id</th>
+                            <td>@speaker.name</td>
+                            <td>@speaker.Bio</td>
+                            <td>@speaker.webSite</td>
+                            <td class="text-center">
+                                <span style="cursor:pointer" class="oi oi-trash" @onclick="()=>DeleteSpeaker(speaker.Id)"></span>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            }
+        </table>
+
+
+
+
+
+    </div>
+
+@code {
+    private List<SpeakerModel> speakers;
+    private SpeakerCreateModel speaker;
+
+
+    private async Task GetSpeakers()
+    {
+        speakers = await http.GetJsonAsync<List<SpeakerModel>>("https://localhost:44366/api/Speakers");
+        StateHasChanged();
+    }
+
+    private async Task CreateSpeakers()
+    {
+        await http.PostJsonAsync<SpeakerCreateModel>("https://localhost:44366/api/Speakers", speaker);
+        speaker = new SpeakerCreateModel();
+        await CreateSpeakers();
+    }
+
+    private async Task DeleteAllSpeaker()
+    {
+        await http.DeleteAsync("https://localhost:44366/api/Speakers/all");
+        await GetSpeakers();
+
+    }
+
+
+    private async Task DeleteSpeaker(int id)
+    {
+        await http.DeleteAsync($"https://localhost:44366/api/Speakers/{id}");
+        await GetSpeakers();
+    }
+
+
+
+    protected override async Task OnInitializedAsync()
+    {
+        speaker = new SpeakerCreateModel();
+        await GetSpeakers();
+    }
+}
+
